@@ -1,0 +1,40 @@
+elyashiv@Elyashivs-MacBook-Pro projects % mkdir pixel-quest
+elyashiv@Elyashivs-MacBook-Pro projects % cd pixel-quest 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git init
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % touch game.txt
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % vim game.txt 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git add .; git commit -m "first_v eli"
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git branch -M main
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git remote add origin https://github.com/elyashiv988-cell/pixel-quest.git
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git push -u origin main
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % cd ../
+elyashiv@Elyashivs-MacBook-Pro projects % mkdir dev2_ori
+elyashiv@Elyashivs-MacBook-Pro projects % cd dev2_ori 
+elyashiv@Elyashivs-MacBook-Pro dev2_ori % git clone https://github.com/elyashiv988-cell/pixel-quest.git
+elyashiv@Elyashivs-MacBook-Pro dev2_ori % ls
+elyashiv@Elyashivs-MacBook-Pro dev2_ori % cat pixel-quest/game.txt elyashiv@Elyashivs-MacBook-Pro dev2_ori % cd pixel-quest 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git switch -c feature/player-menu
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % touch player_menu.txt
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % ls
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % vim player_menu.txt 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git add player_menu.txt ; git commit -m "edded player menu - ori"
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git push
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git push --set-upstream origin feature/player-menu
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git branch
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git switch main
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git pull  
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % cat game.txt
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git switch feature/player-menu
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % vim player_menu.txt 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git add player_menu.txt ;git commit -m "updated player-menu by ori"
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git push
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % cat player_menu.txt 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git switch main
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % ls
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % touch setting.txt
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % vim setting.txt 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git add setting.txt ; git commit -m "edded setting" 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git pull
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % vim setting.txt 
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git add setting.txt ; git commit -m "final version"
+elyashiv@Elyashivs-MacBook-Pro pixel-quest % git push
